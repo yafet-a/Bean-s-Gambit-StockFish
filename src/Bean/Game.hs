@@ -109,7 +109,7 @@ makeMove b (x1,y1) (x2,y2)
   game is drawn in any position.
 -}
 gameIsDrawn :: [Board] -> Bool
-gameIsDrawn bs = p bs || length bs > 50
+gameIsDrawn bs = not (p bs) || length bs > 50
   where p = all (maybe True (uncurry notElem) . uncons) . tails
 
 
