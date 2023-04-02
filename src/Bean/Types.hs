@@ -16,6 +16,7 @@ import qualified Data.List as List
 -- | The board is a two-dimensional list of pieces.
 type Board = [[Piece]]
 
+data Move = Move Coord Coord
 instance {-# OVERLAPS #-} Show Board where
   show b = List.intercalate "\n" $ map (concatMap show) b
 

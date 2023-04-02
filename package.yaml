@@ -7,7 +7,15 @@ copyright:           "2023 Alex Dixon"
 
 dependencies:
 - base >= 4.7 && < 5
+- megaparsec
+- filepath
 - process
+- text
+- split
+- parsec
+- void
+
+
 
 ghc-options:
 - -Wall
@@ -31,6 +39,7 @@ default-extensions:
 
 library:
   source-dirs: src
+  
 
 executables:
   gambit:

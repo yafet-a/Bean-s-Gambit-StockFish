@@ -1,4 +1,4 @@
-{-# LANGUAGE LambdaCase #-}
+ {-# LANGUAGE LambdaCase #-}
 {-# OPTIONS_GHC -Wno-name-shadowing #-}
 {-# OPTIONS_GHC -Wno-incomplete-uni-patterns #-}
 module Bean.Game where
@@ -57,7 +57,7 @@ validCowMoves b c = filter (allow [Empty] b) $ moves c
 
 {-| 
   Returns the valid moves for a bean on the given team in position c.
--}
+-} 
 validBeanMoves :: Board -> Player -> Coord -> [Coord]
 validBeanMoves b RedPlayer c = filter (allow [Empty, Blue Bean] b) $ moves c
 validBeanMoves b BluePlayer c = filter (allow [Empty, Red Bean] b) $ moves c
@@ -126,3 +126,5 @@ gameIsWon b p = any (null . validCowMoves b) cowPositions
       RedPlayer  -> Red Cow
       BluePlayer -> Blue Cow
     allPositions = [ (x,y) | x <- [0..3], y <- [0..3] ]
+
+
