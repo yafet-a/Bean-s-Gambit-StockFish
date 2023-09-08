@@ -3,14 +3,6 @@
 {-# OPTIONS_GHC -Wno-incomplete-uni-patterns #-}
 module Bean.Game where
 
---------------------------------------------------------------------------------
--- This file contains implementations of the functions from coursework 1.
---
--- Feel free to use them for this coursework! 
---
--- You are also welcome to ignore them or implement your own alternatives, 
--- if you would prefer to use other data structures or a different approach.
---------------------------------------------------------------------------------
 
 import Bean.Types
 import Data.Monoid ( Sum(getSum) )
